@@ -1,3 +1,13 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+board = ["-", "-", "-",
+         "-", "-", "-",
+         "-", "-", "-"]
+
+
+# Creating a board
+def displayBoard(board):
+    print(board[0] + "|" + board[1] + "|" + board[2])
+    print("-" * 9)
+    print(board[3] + "|" + board[4] + "|" + board[5])
+    print("-" * 9)
+    print(board[6] + "|" + board[7] + "|" + board[8])
+
