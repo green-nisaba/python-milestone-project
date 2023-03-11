@@ -67,7 +67,14 @@ def whether_tie(board):
         print("It's a tie")
         game_going = False
 
-# 
+# Change player 
+def change_player(): 
+    global current_player
+    if current_player == "X":
+        current_player = "O"
+    else current_player = "X"
+
+
 while game_going:
     display_board(board)
     players_choice(board)
