@@ -1,3 +1,4 @@
+import random
 board = ["-", "-", "-",
          "-", "-", "-",
          "-", "-", "-"]
@@ -67,14 +68,35 @@ def whether_tie(board):
         print("It's a tie")
         game_going = False
 
+def determine_winner():
+    if horizontal_winner(board) or row_winner(board) or diagonal_winner(board):
+        game_going = False
+        print(f"The winner is {winner}")
+
+
 # Change player 
 def change_player(): 
     global current_player
     if current_player == "X":
         current_player = "O"
-    else current_player = "X"
+    else:
+        current_player = "X"  
 
+
+# Set computer move 
+def comp_choice(board):
+    while current_player == "O":
+        comp_position = random.randint(0,8)
+        if board[comp_position] == "-":
+            board[comp_position] = "O"
+            change_player()
 
 while game_going:
     display_board(board)
     players_choice(board)
+    determine_winner()
+    whether_tie(board)
+    change_player()
+    comp_choice(board)
+    determine_winner()
+    whether_tie(board)
