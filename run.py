@@ -60,6 +60,13 @@ def diagonal_winner(board):
         winner = board[2]
         return True
 
+def whether_tie(board):
+    global game_going
+    if "-" not in board:
+        display_board(board)
+        print("It's a tie")
+        game_going = False
+
 # 
 while game_going:
     display_board(board)
