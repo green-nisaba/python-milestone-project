@@ -68,11 +68,29 @@ def whether_tie(board):
         print("It's a tie")
         game_going = False
 
-def determine_winner():
-    if horizontal_winner(board) or row_winner(board) or diagonal_winner(board):
-        game_going = False
-        print(f"The winner is {winner}")
+def determine_winner(board):
+    global game_going
+    if horizontal_winner(board):
+        display_board(board)
+        print(f"The winner is {winner}!")
+        game_going= False
 
+
+    if row_winner(board):
+        display_board(board)
+        print(f"The winner is {winner}!")
+        game_going= False
+
+    if diagonal_winner(board):
+        display_board(board)
+        print(f"The winner is {winner}!")
+        game_going= False
+   
+
+    
+    
+      
+        
 
 # Change player 
 def change_player(): 
@@ -80,13 +98,13 @@ def change_player():
     if current_player == "X":
         current_player = "O"
     else:
-        current_player = "X"  
+        current_player = "X"
 
 
 # Set computer move 
 def comp_choice(board):
     while current_player == "O":
-        comp_position = random.randint(0,8)
+        comp_position = random.randint(0, 8)
         if board[comp_position] == "-":
             board[comp_position] = "O"
             change_player()
@@ -94,9 +112,10 @@ def comp_choice(board):
 while game_going:
     display_board(board)
     players_choice(board)
-    determine_winner()
+    determine_winner(board)
     whether_tie(board)
     change_player()
     comp_choice(board)
-    determine_winner()
+    determine_winner(board)
     whether_tie(board)
+   
