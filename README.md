@@ -25,3 +25,8 @@ When there aren't empty spaces left, the game is over.
 
 
 ## Credits 
+
+* Code Institute for the deployment Terminal and [README example](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PE_PAGPPF+2021_Q2/courseware/b3378fc1159e43e3b70916fdefdfae51/605f34e006594dc4ae19f5e60ec75e2e/)
+* Wikipedia for details on "Tic-Tac-Toe" game
+* [Clever Programmer](https://www.youtube.com/watch?v=n2o8ckO-lfk) for providing main approach on how to build the app 
+
