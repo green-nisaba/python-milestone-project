@@ -22,7 +22,7 @@ def players_choice(board):
     if choosen >= 1 and choosen <= 9 and board[choosen - 1] == "-":
         board[choosen - 1] = current_player
     else:
-        print("Please choose a valid option")
+        choosen = input("Invalid input. Choose a number 1-9, which was't taken:")
 
 
 
