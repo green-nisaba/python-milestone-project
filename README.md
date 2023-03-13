@@ -9,3 +9,19 @@ More can be read on [Wikipedia page](https://en.wikipedia.org/wiki/Tic-tac-toe)
 In this app user is playing against the computer. User is asked to choose a number from 1 to 9. 
 Each number represents a spot on a gameboard. 
 When there aren't empty spaces left, the game is over.
+
+## Features 
+### Existing features 
+
+### Future features 
+
+## Data Model
+
+
+## Testing 
+
+
+## Deployment 
+
+
+## Credits 
