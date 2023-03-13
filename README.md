@@ -23,6 +23,13 @@ When there aren't empty spaces left, the game is over.
 
 ## Deployment 
 
+The project was deployed using terminal for Heroku.
+Steps for deployment:
+* Fork or clone this repository
+* Create a new Heroku app
+* Set the buildbacks to Python and NodeJS in this order
+* Link the Heroku app to this repository
+* Click on Deploy
 
 ## Credits 
 
