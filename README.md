@@ -32,10 +32,14 @@ This app has:
 
 
 ## Data Model
-
+I used Tic-tac-toe as a model. Game has several functions, that aim to print a board, to collect user input, to assign computer's input using random, and
+to check for the winner. 
 
 ## Testing 
 ### Bugs
+ * Some of functions didn't work as expected because of identation errors 
+ * Game didn'g stop after victory as a result of incorrect function execution 
+
 ### Manual testing 
 I tested my app doing the following:
 * Cheching different outcomes of the game 
@@ -43,7 +47,7 @@ I tested my app doing the following:
 * Tested in my local and Heroku terminals
 
 ### Validator Testing 
-PEP8 didn't find any significant issues
+PEP8 didn't find any significant issues(one line is too long)
 
 
 
