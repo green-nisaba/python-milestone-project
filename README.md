@@ -12,8 +12,24 @@ When there aren't empty spaces left, the game is over.
 
 ## Features 
 ### Existing features 
+This app has:
+* A simple board 
+* Option to choose position on board
+
+![screen](https://raw.githubusercontent.com/green-nisaba/python-milestone-project/main/screens/1_screen_ttt.png)
+
+
+* Shows result of the game 
+
+![result](https://raw.githubusercontent.com/green-nisaba/python-milestone-project/main/screens/2_screen_ttt.png)
+
+
 
 ### Future features 
+* Add graphical interface
+* Show user score counter 
+
+
 
 ## Data Model
 
