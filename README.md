@@ -35,6 +35,16 @@ This app has:
 
 
 ## Testing 
+### Bugs
+### Manual testing 
+I tested my app doing the following:
+* Cheching different outcomes of the game 
+* Providing incorrect inpit (already taken spots on a board)
+* Tested in my local and Heroku terminals
+
+### Validator Testing 
+PEP8 didn't find any significant issues
+
 
 
 ## Deployment 
